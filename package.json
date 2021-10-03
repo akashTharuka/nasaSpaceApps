@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "start": "node index.js"
+    "start": "npm run dev"
   },
   "devDependencies": {
     "vite": "^2.6.0"
