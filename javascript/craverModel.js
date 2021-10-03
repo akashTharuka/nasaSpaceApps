@@ -42,7 +42,7 @@ function render(){
 }
 
 
-craver.addAxes(5);
+// craver.addAxes(5);
 
 window.addEventListener("resize", () => craver.onWindowResize(container), false);
 

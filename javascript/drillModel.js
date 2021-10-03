@@ -42,7 +42,7 @@ function render(){
 }
 
 
-drill.addAxes(5);
+// drill.addAxes(5);
 
 window.addEventListener("resize", () => drill.onWindowResize(container), false);
 
