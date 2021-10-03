@@ -102,8 +102,8 @@ export default class Model {
 
         this.loader.load(pathToModel, gltf => {
             this.model = gltf.scene.children[0];
-            // this.model.scale.set(scale, scale, scale);
-            // this.model.position.set(x, y, z);
+            this.model.scale.set(scale, scale, scale);
+            this.model.position.set(x, y, z);
             scene.add(gltf.scene);
             this.animate(renderer, scene, camera);
         });
