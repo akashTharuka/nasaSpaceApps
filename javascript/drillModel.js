@@ -1,7 +1,7 @@
 import Model from './model';
 
 let container = document.querySelector('.model-container');
-let pathToModel = "../models/drillModel/Drill.glb";
+let pathToModel = "../models/drillModel/drill.gltf";
 
 let drill = new Model();
 
@@ -29,7 +29,7 @@ scene.add(ambientLight, mainLight, light1, light2, light3, light4);
 let renderer = drill.createRenderer(container, 2.2, true);
 // console.log(renderer);
 
-drill.loadModel(renderer, scene, camera, pathToModel, 0.1);
+drill.loadModel(renderer, scene, camera, pathToModel, 20);
 
 let controls = drill.createControls(camera, renderer);
 controls.addEventListener('change', render);
